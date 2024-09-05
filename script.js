@@ -9,15 +9,12 @@ for(let i = 1;i <= 9;i++){
 }
 const form = document.querySelector("form");
 let prev_ele = null;
-function removePreviousColor(){
-	if(prev_ele) prev_ele.style.backgroundColor = "#ffffff";
-}
 form.addEventListener("submit",(event) =>{
 	event.preventDefault();
 	let selected_id = form.id.value;
 	let selected_color = form.color.value;
 	let cell = document.getElementById(selected_id);
 	cell.style.backgroundColor = selected_color;
-	removePreviousColor();
+	if(prev_ele) prev_ele.style.backgroundColor = "#ffffff";
 	prev_ele = cell;
 });
