@@ -1,1 +1,26 @@
-/*  your css code here. If applicable */
+*{
+	margin:0px;
+	padding:0px;
+}
+#grid-container{
+	height:300px;
+	width:300px;
+	display:inline-grid;
+	grid-template-columns:repeat(3,1fr);
+	grid-template-rows:repeat(3,1fr);
+	box-shadow:2px 2px 10px #e7e7e7;
+	gap:0px;
+}
+.grid-item{
+	display:flex;
+	border:1px solid #e7e7e7;
+	align-items:center;
+	justify-content:center;
+	/* transition:1s; */
+}
+form{
+	display:flex;
+}
+form>input{
+	width:100px;
+}
