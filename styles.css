@@ -16,11 +16,10 @@
 	border:1px solid #e7e7e7;
 	align-items:center;
 	justify-content:center;
-	/* transition:1s; */
 }
 form{
 	display:flex;
 }
-form>input{
+form>input,button{
 	width:100px;
 }
